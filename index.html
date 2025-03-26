@@ -1,0 +1,1119 @@
+<!DOCTYPE html><html><head><meta charset="utf - 8"><title>Print-Report</title><link rel = "stylesheet" href="Print.css" type="text/css"></head> <body>
+<h2> NetSim ACADEMIC</h2>
+<h4>Version 13.3.17</h4>
+<h1>IP-Addressing</h1>
+<h3>Mar 26 2025, 10:47:01 AM</h3>
+<br>
+<p><strong>Table Of Contents</strong></p>
+<ol>
+<li><a href='#Network Scenario'>Network Scenario</a></li>
+<li><a href='#Link_Metrics'>Link_Metrics</a>
+</li>
+<li><a href='#Queue_Metrics'>Queue_Metrics</a>
+</li>
+<li><a href='#TCP_Metrics'>TCP_Metrics</a>
+</li>
+<li><a href='#IP_Metrics'>IP_Metrics</a>
+</li>
+<li><a href='#IP_Forwarding_Table'>IP_Forwarding_Table</a>
+<ol type='a'>
+<li><a href='#SERVER'>SERVER</a>
+</li>
+<li><a href='#INTERNET ROUTER'>INTERNET ROUTER</a>
+</li>
+<li><a href='#USER_1'>USER_1</a>
+</li>
+<li><a href='#USER_2'>USER_2</a>
+</li>
+<li><a href='#USER_3'>USER_3</a>
+</li>
+<li><a href='#USER_4'>USER_4</a>
+</li>
+<li><a href='#USER_5'>USER_5</a>
+</li>
+</ol>
+</li>
+<li><a href='#Switch Mac address table'>Switch Mac address table</a>
+<ol type='a'>
+<li><a href='#CLASS_C_SWITCH'>CLASS_C_SWITCH</a>
+</li>
+</ol>
+</li>
+<li><a href='#Application_Metrics'>Application_Metrics</a>
+</li>
+</ol>
+<p class = "blank"/>
+<p class='blank'></p><h3 id='Network Scenario'>Network Scenario</h3>
+<img width=1250 alt=Thumbnails src=A_Scenario.png height=1000 />
+<p style='margin - bottom:150px; '></p>
+<h3 id='Link_Metrics'>Link_Metrics</h3>
+<table>
+<thead>
+<tr  page-break-after:auto>
+<th rowspan='2'>Link ID</th>
+<th rowspan='2'>Link Throughput Plot</th>
+<th  colspan='2'>Packets Transmitted</th>
+<th  colspan='2'>Packets Errored</th>
+<th  colspan='2'>Packets Collided</th>
+<th rowspan='2'>Bytes Transmitted(bytes)</th>
+<th rowspan='2'>Payload Transmitted(bytes)</th>
+<th rowspan='2'>Overhead Transmitted(bytes)</th>
+</tr>
+<tr>
+ <th class = 'lvl2' colspan='1'>Data</th>
+ <th class = 'lvl2' colspan='1'>Control</th>
+ <th class = 'lvl2' colspan='1'>Data</th>
+ <th class = 'lvl2' colspan='1'>Control</th>
+ <th class = 'lvl2' colspan='1'>Data</th>
+ <th class = 'lvl2' colspan='1'>Control</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='calign'>All</td>
+<td class='ralign'>NA</td>
+<td class='ralign'>75229</td>
+<td class='ralign'>75059</td>
+<td class='ralign'>104</td>
+<td class='ralign'>6</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>119753468</td>
+<td class='ralign'>109682500</td>
+<td class='ralign'>10070968</td>
+</tr>
+<tr>
+<td class='calign'>1</td>
+<td class='ralign'>NA</td>
+<td class='ralign'>25110</td>
+<td class='ralign'>25017</td>
+<td class='ralign'>29</td>
+<td class='ralign'>2</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>39969022</td>
+<td class='ralign'>36618260</td>
+<td class='ralign'>3350762</td>
+</tr>
+<tr>
+<td class='calign'>2</td>
+<td class='ralign'>NA</td>
+<td class='ralign'>25081</td>
+<td class='ralign'>25021</td>
+<td class='ralign'>43</td>
+<td class='ralign'>4</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>39925032</td>
+<td class='ralign'>36555480</td>
+<td class='ralign'>3369552</td>
+</tr>
+<tr>
+<td class='calign'>3</td>
+<td class='ralign'>NA</td>
+<td class='ralign'>5005</td>
+<td class='ralign'>5003</td>
+<td class='ralign'>5</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>7967836</td>
+<td class='ralign'>7300000</td>
+<td class='ralign'>667836</td>
+</tr>
+<tr>
+<td class='calign'>4</td>
+<td class='ralign'>NA</td>
+<td class='ralign'>5012</td>
+<td class='ralign'>5004</td>
+<td class='ralign'>11</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>7978584</td>
+<td class='ralign'>7301460</td>
+<td class='ralign'>677124</td>
+</tr>
+<tr>
+<td class='calign'>5</td>
+<td class='ralign'>NA</td>
+<td class='ralign'>5008</td>
+<td class='ralign'>5005</td>
+<td class='ralign'>6</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>7972546</td>
+<td class='ralign'>7302920</td>
+<td class='ralign'>669626</td>
+</tr>
+<tr>
+<td class='calign'>6</td>
+<td class='ralign'>NA</td>
+<td class='ralign'>5005</td>
+<td class='ralign'>5004</td>
+<td class='ralign'>4</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>7967902</td>
+<td class='ralign'>7301460</td>
+<td class='ralign'>666442</td>
+</tr>
+<tr>
+<td class='calign'>7</td>
+<td class='ralign'>NA</td>
+<td class='ralign'>5008</td>
+<td class='ralign'>5005</td>
+<td class='ralign'>6</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>7972546</td>
+<td class='ralign'>7302920</td>
+<td class='ralign'>669626</td>
+</tr>
+</tbody>
+</table>
+<p class="blank"></p>
+<h3 id='Queue_Metrics'>Queue_Metrics</h3>
+<table>
+<thead>
+<tr  page-break-after:auto>
+<th rowspan='2'>Device_id</th>
+<th rowspan='2'>Port_id</th>
+<th rowspan='2'>Queued_packet</th>
+<th rowspan='2'>Dequeued_packet</th>
+<th rowspan='2'>Dropped_packet</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p class="blank"></p>
+<h3 id='TCP_Metrics'>TCP_Metrics</h3>
+<table>
+<thead>
+<tr  page-break-after:auto>
+<th rowspan='2'>Source</th>
+<th rowspan='2'>Destination</th>
+<th rowspan='2'>Local Address</th>
+<th rowspan='2'>Remote Address</th>
+<th rowspan='2'>Syn Sent</th>
+<th rowspan='2'>Syn-Ack Sent</th>
+<th rowspan='2'>Segment Sent</th>
+<th rowspan='2'>Segment Received</th>
+<th rowspan='2'>Segment Retransmitted</th>
+<th rowspan='2'>Ack Sent</th>
+<th rowspan='2'>Ack Received</th>
+<th rowspan='2'>Duplicate segment received</th>
+<th rowspan='2'>Out of order segment received</th>
+<th rowspan='2'>Duplicate ack received</th>
+<th rowspan='2'>Times RTO expired</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='calign'>SERVER</td>
+<td class='ralign'>ANY_DEVICE</td>
+<td class='ralign'>11.1.1.2:0</td>
+<td class='ralign'>0.0.0.0:0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+</tr>
+<tr>
+<td class='calign'>INTERNET ROUTER</td>
+<td class='ralign'>ANY_DEVICE</td>
+<td class='ralign'>11.1.1.1:0</td>
+<td class='ralign'>0.0.0.0:0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+</tr>
+<tr>
+<td class='calign'>USER_1</td>
+<td class='ralign'>ANY_DEVICE</td>
+<td class='ralign'>192.168.1.2:0</td>
+<td class='ralign'>0.0.0.0:0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+</tr>
+<tr>
+<td class='calign'>USER_2</td>
+<td class='ralign'>ANY_DEVICE</td>
+<td class='ralign'>192.168.1.3:0</td>
+<td class='ralign'>0.0.0.0:0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+</tr>
+<tr>
+<td class='calign'>USER_3</td>
+<td class='ralign'>ANY_DEVICE</td>
+<td class='ralign'>192.168.1.4:0</td>
+<td class='ralign'>0.0.0.0:0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+</tr>
+<tr>
+<td class='calign'>USER_4</td>
+<td class='ralign'>ANY_DEVICE</td>
+<td class='ralign'>192.168.1.5:0</td>
+<td class='ralign'>0.0.0.0:0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+</tr>
+<tr>
+<td class='calign'>USER_5</td>
+<td class='ralign'>ANY_DEVICE</td>
+<td class='ralign'>192.168.1.6:0</td>
+<td class='ralign'>0.0.0.0:0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+</tr>
+<tr>
+<td class='calign'>SERVER</td>
+<td class='ralign'>USER_1</td>
+<td class='ralign'>11.1.1.2:82</td>
+<td class='ralign'>192.168.1.2:36934</td>
+<td class='ralign'>1</td>
+<td class='ralign'>0</td>
+<td class='ralign'>5000</td>
+<td class='ralign'>0</td>
+<td class='ralign'>20</td>
+<td class='ralign'>1</td>
+<td class='ralign'>5000</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>9</td>
+<td class='ralign'>18</td>
+</tr>
+<tr>
+<td class='calign'>SERVER</td>
+<td class='ralign'>USER_2</td>
+<td class='ralign'>11.1.1.2:12668</td>
+<td class='ralign'>192.168.1.3:53000</td>
+<td class='ralign'>1</td>
+<td class='ralign'>0</td>
+<td class='ralign'>5000</td>
+<td class='ralign'>0</td>
+<td class='ralign'>20</td>
+<td class='ralign'>1</td>
+<td class='ralign'>5000</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>5</td>
+<td class='ralign'>19</td>
+</tr>
+<tr>
+<td class='calign'>SERVER</td>
+<td class='ralign'>USER_3</td>
+<td class='ralign'>11.1.1.2:38338</td>
+<td class='ralign'>192.168.1.4:31448</td>
+<td class='ralign'>1</td>
+<td class='ralign'>0</td>
+<td class='ralign'>5000</td>
+<td class='ralign'>0</td>
+<td class='ralign'>32</td>
+<td class='ralign'>1</td>
+<td class='ralign'>5000</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>9</td>
+<td class='ralign'>30</td>
+</tr>
+<tr>
+<td class='calign'>SERVER</td>
+<td class='ralign'>USER_4</td>
+<td class='ralign'>11.1.1.2:22956</td>
+<td class='ralign'>192.168.1.5:58716</td>
+<td class='ralign'>1</td>
+<td class='ralign'>0</td>
+<td class='ralign'>5000</td>
+<td class='ralign'>0</td>
+<td class='ralign'>20</td>
+<td class='ralign'>1</td>
+<td class='ralign'>5000</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>2</td>
+<td class='ralign'>20</td>
+</tr>
+<tr>
+<td class='calign'>SERVER</td>
+<td class='ralign'>USER_5</td>
+<td class='ralign'>11.1.1.2:53924</td>
+<td class='ralign'>192.168.1.6:48928</td>
+<td class='ralign'>1</td>
+<td class='ralign'>0</td>
+<td class='ralign'>5000</td>
+<td class='ralign'>0</td>
+<td class='ralign'>18</td>
+<td class='ralign'>1</td>
+<td class='ralign'>5000</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>3</td>
+<td class='ralign'>17</td>
+</tr>
+<tr>
+<td class='calign'>USER_1</td>
+<td class='ralign'>SERVER</td>
+<td class='ralign'>192.168.1.2:36934</td>
+<td class='ralign'>11.1.1.2:82</td>
+<td class='ralign'>0</td>
+<td class='ralign'>1</td>
+<td class='ralign'>0</td>
+<td class='ralign'>5000</td>
+<td class='ralign'>0</td>
+<td class='ralign'>5000</td>
+<td class='ralign'>1</td>
+<td class='ralign'>0</td>
+<td class='ralign'>9</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+</tr>
+<tr>
+<td class='calign'>USER_2</td>
+<td class='ralign'>SERVER</td>
+<td class='ralign'>192.168.1.3:53000</td>
+<td class='ralign'>11.1.1.2:12668</td>
+<td class='ralign'>0</td>
+<td class='ralign'>1</td>
+<td class='ralign'>0</td>
+<td class='ralign'>5000</td>
+<td class='ralign'>0</td>
+<td class='ralign'>5001</td>
+<td class='ralign'>1</td>
+<td class='ralign'>0</td>
+<td class='ralign'>5</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+</tr>
+<tr>
+<td class='calign'>USER_3</td>
+<td class='ralign'>SERVER</td>
+<td class='ralign'>192.168.1.4:31448</td>
+<td class='ralign'>11.1.1.2:38338</td>
+<td class='ralign'>0</td>
+<td class='ralign'>1</td>
+<td class='ralign'>0</td>
+<td class='ralign'>5000</td>
+<td class='ralign'>0</td>
+<td class='ralign'>5002</td>
+<td class='ralign'>1</td>
+<td class='ralign'>0</td>
+<td class='ralign'>9</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+</tr>
+<tr>
+<td class='calign'>USER_4</td>
+<td class='ralign'>SERVER</td>
+<td class='ralign'>192.168.1.5:58716</td>
+<td class='ralign'>11.1.1.2:22956</td>
+<td class='ralign'>0</td>
+<td class='ralign'>1</td>
+<td class='ralign'>0</td>
+<td class='ralign'>5000</td>
+<td class='ralign'>0</td>
+<td class='ralign'>5002</td>
+<td class='ralign'>1</td>
+<td class='ralign'>0</td>
+<td class='ralign'>2</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+</tr>
+<tr>
+<td class='calign'>USER_5</td>
+<td class='ralign'>SERVER</td>
+<td class='ralign'>192.168.1.6:48928</td>
+<td class='ralign'>11.1.1.2:53924</td>
+<td class='ralign'>0</td>
+<td class='ralign'>1</td>
+<td class='ralign'>0</td>
+<td class='ralign'>5000</td>
+<td class='ralign'>0</td>
+<td class='ralign'>5001</td>
+<td class='ralign'>1</td>
+<td class='ralign'>0</td>
+<td class='ralign'>3</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+</tr>
+</tbody>
+</table>
+<p class="blank"></p>
+<h3 id='IP_Metrics'>IP_Metrics</h3>
+<table>
+<thead>
+<tr  page-break-after:auto>
+<th rowspan='2'>Device Id</th>
+<th rowspan='2'>Packet sent</th>
+<th rowspan='2'>Packet forwarded</th>
+<th rowspan='2'>Packet received</th>
+<th rowspan='2'>Packet discarded</th>
+<th rowspan='2'>TTL expired</th>
+<th rowspan='2'>Firewall blocked</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='calign'>1</td>
+<td class='ralign'>25120</td>
+<td class='ralign'>0</td>
+<td class='ralign'>25005</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+</tr>
+<tr>
+<td class='calign'>2</td>
+<td class='ralign'>50098</td>
+<td class='ralign'>50098</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+</tr>
+<tr>
+<td class='calign'>4</td>
+<td class='ralign'>5001</td>
+<td class='ralign'>0</td>
+<td class='ralign'>5002</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+</tr>
+<tr>
+<td class='calign'>5</td>
+<td class='ralign'>5002</td>
+<td class='ralign'>0</td>
+<td class='ralign'>5003</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+</tr>
+<tr>
+<td class='calign'>6</td>
+<td class='ralign'>5003</td>
+<td class='ralign'>0</td>
+<td class='ralign'>5004</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+</tr>
+<tr>
+<td class='calign'>7</td>
+<td class='ralign'>5003</td>
+<td class='ralign'>0</td>
+<td class='ralign'>5004</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+</tr>
+<tr>
+<td class='calign'>8</td>
+<td class='ralign'>5002</td>
+<td class='ralign'>0</td>
+<td class='ralign'>5003</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+<td class='ralign'>0</td>
+</tr>
+</tbody>
+</table>
+<p class="blank"></p>
+<h3 id='IP_Forwarding_Table'>IP_Forwarding_Table</h3>
+<h3 id='SERVER'>SERVER</h3>
+<table>
+<thead>
+<tr  page-break-after:auto>
+<th rowspan='2'>Network Destination</th>
+<th rowspan='2'>Netmask/Prefix len</th>
+<th rowspan='2'>Gateway</th>
+<th rowspan='2'>Interface</th>
+<th rowspan='2'>Metrics</th>
+<th rowspan='2'>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='calign'>11.1.0.0</td>
+<td class='ralign'>255.255.0.0</td>
+<td class='ralign'>on-link</td>
+<td class='ralign'>11.1.1.2 </td>
+<td class='ralign'>300</td>
+<td class='ralign'>LOCAL</td>
+</tr>
+<tr>
+<td class='calign'>224.0.0.1</td>
+<td class='ralign'>255.255.255.255</td>
+<td class='ralign'>on-link</td>
+<td class='ralign'>11.1.1.2 </td>
+<td class='ralign'>306</td>
+<td class='ralign'>MULTICAST</td>
+</tr>
+<tr>
+<td class='calign'>224.0.0.0</td>
+<td class='ralign'>240.0.0.0</td>
+<td class='ralign'>on-link</td>
+<td class='ralign'>11.1.1.2 </td>
+<td class='ralign'>306</td>
+<td class='ralign'>MULTICAST</td>
+</tr>
+<tr>
+<td class='calign'>255.255.255.255</td>
+<td class='ralign'>255.255.255.255</td>
+<td class='ralign'>on-link</td>
+<td class='ralign'>11.1.1.2 </td>
+<td class='ralign'>999</td>
+<td class='ralign'>BROADCAST</td>
+</tr>
+<tr>
+<td class='calign'>0.0.0.0</td>
+<td class='ralign'>0.0.0.0</td>
+<td class='ralign'>11.1.1.1</td>
+<td class='ralign'>11.1.1.2 </td>
+<td class='ralign'>999</td>
+<td class='ralign'>DEFAULT</td>
+</tr>
+</tbody>
+</table>
+<p class="blank"></p>
+<h3 id='INTERNET ROUTER'>INTERNET ROUTER</h3>
+<table>
+<thead>
+<tr  page-break-after:auto>
+<th rowspan='2'>Network Destination</th>
+<th rowspan='2'>Netmask/Prefix len</th>
+<th rowspan='2'>Gateway</th>
+<th rowspan='2'>Interface</th>
+<th rowspan='2'>Metrics</th>
+<th rowspan='2'>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='calign'>192.168.1.0</td>
+<td class='ralign'>255.255.255.0</td>
+<td class='ralign'>on-link</td>
+<td class='ralign'>192.168.1.1 </td>
+<td class='ralign'>300</td>
+<td class='ralign'>LOCAL</td>
+</tr>
+<tr>
+<td class='calign'>11.1.0.0</td>
+<td class='ralign'>255.255.0.0</td>
+<td class='ralign'>on-link</td>
+<td class='ralign'>11.1.1.1 </td>
+<td class='ralign'>300</td>
+<td class='ralign'>LOCAL</td>
+</tr>
+<tr>
+<td class='calign'>224.0.0.1</td>
+<td class='ralign'>255.255.255.255</td>
+<td class='ralign'>on-link</td>
+<td class='ralign'>11.1.1.1 192.168.1.1 </td>
+<td class='ralign'>306</td>
+<td class='ralign'>MULTICAST</td>
+</tr>
+<tr>
+<td class='calign'>224.0.0.0</td>
+<td class='ralign'>240.0.0.0</td>
+<td class='ralign'>on-link</td>
+<td class='ralign'>11.1.1.1 192.168.1.1 </td>
+<td class='ralign'>306</td>
+<td class='ralign'>MULTICAST</td>
+</tr>
+<tr>
+<td class='calign'>255.255.255.255</td>
+<td class='ralign'>255.255.255.255</td>
+<td class='ralign'>on-link</td>
+<td class='ralign'>192.168.1.1 </td>
+<td class='ralign'>999</td>
+<td class='ralign'>BROADCAST</td>
+</tr>
+<tr>
+<td class='calign'>255.255.255.255</td>
+<td class='ralign'>255.255.255.255</td>
+<td class='ralign'>on-link</td>
+<td class='ralign'>11.1.1.1 </td>
+<td class='ralign'>999</td>
+<td class='ralign'>BROADCAST</td>
+</tr>
+</tbody>
+</table>
+<p class="blank"></p>
+<h3 id='USER_1'>USER_1</h3>
+<table>
+<thead>
+<tr  page-break-after:auto>
+<th rowspan='2'>Network Destination</th>
+<th rowspan='2'>Netmask/Prefix len</th>
+<th rowspan='2'>Gateway</th>
+<th rowspan='2'>Interface</th>
+<th rowspan='2'>Metrics</th>
+<th rowspan='2'>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='calign'>192.168.1.0</td>
+<td class='ralign'>255.255.255.0</td>
+<td class='ralign'>on-link</td>
+<td class='ralign'>192.168.1.2 </td>
+<td class='ralign'>300</td>
+<td class='ralign'>LOCAL</td>
+</tr>
+<tr>
+<td class='calign'>224.0.0.1</td>
+<td class='ralign'>255.255.255.255</td>
+<td class='ralign'>on-link</td>
+<td class='ralign'>192.168.1.2 </td>
+<td class='ralign'>306</td>
+<td class='ralign'>MULTICAST</td>
+</tr>
+<tr>
+<td class='calign'>224.0.0.0</td>
+<td class='ralign'>240.0.0.0</td>
+<td class='ralign'>on-link</td>
+<td class='ralign'>192.168.1.2 </td>
+<td class='ralign'>306</td>
+<td class='ralign'>MULTICAST</td>
+</tr>
+<tr>
+<td class='calign'>255.255.255.255</td>
+<td class='ralign'>255.255.255.255</td>
+<td class='ralign'>on-link</td>
+<td class='ralign'>192.168.1.2 </td>
+<td class='ralign'>999</td>
+<td class='ralign'>BROADCAST</td>
+</tr>
+<tr>
+<td class='calign'>0.0.0.0</td>
+<td class='ralign'>0.0.0.0</td>
+<td class='ralign'>192.168.1.1</td>
+<td class='ralign'>192.168.1.2 </td>
+<td class='ralign'>999</td>
+<td class='ralign'>DEFAULT</td>
+</tr>
+</tbody>
+</table>
+<p class="blank"></p>
+<h3 id='USER_2'>USER_2</h3>
+<table>
+<thead>
+<tr  page-break-after:auto>
+<th rowspan='2'>Network Destination</th>
+<th rowspan='2'>Netmask/Prefix len</th>
+<th rowspan='2'>Gateway</th>
+<th rowspan='2'>Interface</th>
+<th rowspan='2'>Metrics</th>
+<th rowspan='2'>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='calign'>192.168.1.0</td>
+<td class='ralign'>255.255.255.0</td>
+<td class='ralign'>on-link</td>
+<td class='ralign'>192.168.1.3 </td>
+<td class='ralign'>300</td>
+<td class='ralign'>LOCAL</td>
+</tr>
+<tr>
+<td class='calign'>224.0.0.1</td>
+<td class='ralign'>255.255.255.255</td>
+<td class='ralign'>on-link</td>
+<td class='ralign'>192.168.1.3 </td>
+<td class='ralign'>306</td>
+<td class='ralign'>MULTICAST</td>
+</tr>
+<tr>
+<td class='calign'>224.0.0.0</td>
+<td class='ralign'>240.0.0.0</td>
+<td class='ralign'>on-link</td>
+<td class='ralign'>192.168.1.3 </td>
+<td class='ralign'>306</td>
+<td class='ralign'>MULTICAST</td>
+</tr>
+<tr>
+<td class='calign'>255.255.255.255</td>
+<td class='ralign'>255.255.255.255</td>
+<td class='ralign'>on-link</td>
+<td class='ralign'>192.168.1.3 </td>
+<td class='ralign'>999</td>
+<td class='ralign'>BROADCAST</td>
+</tr>
+<tr>
+<td class='calign'>0.0.0.0</td>
+<td class='ralign'>0.0.0.0</td>
+<td class='ralign'>192.168.1.1</td>
+<td class='ralign'>192.168.1.3 </td>
+<td class='ralign'>999</td>
+<td class='ralign'>DEFAULT</td>
+</tr>
+</tbody>
+</table>
+<p class="blank"></p>
+<h3 id='USER_3'>USER_3</h3>
+<table>
+<thead>
+<tr  page-break-after:auto>
+<th rowspan='2'>Network Destination</th>
+<th rowspan='2'>Netmask/Prefix len</th>
+<th rowspan='2'>Gateway</th>
+<th rowspan='2'>Interface</th>
+<th rowspan='2'>Metrics</th>
+<th rowspan='2'>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='calign'>192.168.1.0</td>
+<td class='ralign'>255.255.255.0</td>
+<td class='ralign'>on-link</td>
+<td class='ralign'>192.168.1.4 </td>
+<td class='ralign'>300</td>
+<td class='ralign'>LOCAL</td>
+</tr>
+<tr>
+<td class='calign'>224.0.0.1</td>
+<td class='ralign'>255.255.255.255</td>
+<td class='ralign'>on-link</td>
+<td class='ralign'>192.168.1.4 </td>
+<td class='ralign'>306</td>
+<td class='ralign'>MULTICAST</td>
+</tr>
+<tr>
+<td class='calign'>224.0.0.0</td>
+<td class='ralign'>240.0.0.0</td>
+<td class='ralign'>on-link</td>
+<td class='ralign'>192.168.1.4 </td>
+<td class='ralign'>306</td>
+<td class='ralign'>MULTICAST</td>
+</tr>
+<tr>
+<td class='calign'>255.255.255.255</td>
+<td class='ralign'>255.255.255.255</td>
+<td class='ralign'>on-link</td>
+<td class='ralign'>192.168.1.4 </td>
+<td class='ralign'>999</td>
+<td class='ralign'>BROADCAST</td>
+</tr>
+<tr>
+<td class='calign'>0.0.0.0</td>
+<td class='ralign'>0.0.0.0</td>
+<td class='ralign'>192.168.1.1</td>
+<td class='ralign'>192.168.1.4 </td>
+<td class='ralign'>999</td>
+<td class='ralign'>DEFAULT</td>
+</tr>
+</tbody>
+</table>
+<p class="blank"></p>
+<h3 id='USER_4'>USER_4</h3>
+<table>
+<thead>
+<tr  page-break-after:auto>
+<th rowspan='2'>Network Destination</th>
+<th rowspan='2'>Netmask/Prefix len</th>
+<th rowspan='2'>Gateway</th>
+<th rowspan='2'>Interface</th>
+<th rowspan='2'>Metrics</th>
+<th rowspan='2'>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='calign'>192.168.1.0</td>
+<td class='ralign'>255.255.255.0</td>
+<td class='ralign'>on-link</td>
+<td class='ralign'>192.168.1.5 </td>
+<td class='ralign'>300</td>
+<td class='ralign'>LOCAL</td>
+</tr>
+<tr>
+<td class='calign'>224.0.0.1</td>
+<td class='ralign'>255.255.255.255</td>
+<td class='ralign'>on-link</td>
+<td class='ralign'>192.168.1.5 </td>
+<td class='ralign'>306</td>
+<td class='ralign'>MULTICAST</td>
+</tr>
+<tr>
+<td class='calign'>224.0.0.0</td>
+<td class='ralign'>240.0.0.0</td>
+<td class='ralign'>on-link</td>
+<td class='ralign'>192.168.1.5 </td>
+<td class='ralign'>306</td>
+<td class='ralign'>MULTICAST</td>
+</tr>
+<tr>
+<td class='calign'>255.255.255.255</td>
+<td class='ralign'>255.255.255.255</td>
+<td class='ralign'>on-link</td>
+<td class='ralign'>192.168.1.5 </td>
+<td class='ralign'>999</td>
+<td class='ralign'>BROADCAST</td>
+</tr>
+<tr>
+<td class='calign'>0.0.0.0</td>
+<td class='ralign'>0.0.0.0</td>
+<td class='ralign'>192.168.1.1</td>
+<td class='ralign'>192.168.1.5 </td>
+<td class='ralign'>999</td>
+<td class='ralign'>DEFAULT</td>
+</tr>
+</tbody>
+</table>
+<p class="blank"></p>
+<h3 id='USER_5'>USER_5</h3>
+<table>
+<thead>
+<tr  page-break-after:auto>
+<th rowspan='2'>Network Destination</th>
+<th rowspan='2'>Netmask/Prefix len</th>
+<th rowspan='2'>Gateway</th>
+<th rowspan='2'>Interface</th>
+<th rowspan='2'>Metrics</th>
+<th rowspan='2'>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='calign'>192.168.1.0</td>
+<td class='ralign'>255.255.255.0</td>
+<td class='ralign'>on-link</td>
+<td class='ralign'>192.168.1.6 </td>
+<td class='ralign'>300</td>
+<td class='ralign'>LOCAL</td>
+</tr>
+<tr>
+<td class='calign'>224.0.0.1</td>
+<td class='ralign'>255.255.255.255</td>
+<td class='ralign'>on-link</td>
+<td class='ralign'>192.168.1.6 </td>
+<td class='ralign'>306</td>
+<td class='ralign'>MULTICAST</td>
+</tr>
+<tr>
+<td class='calign'>224.0.0.0</td>
+<td class='ralign'>240.0.0.0</td>
+<td class='ralign'>on-link</td>
+<td class='ralign'>192.168.1.6 </td>
+<td class='ralign'>306</td>
+<td class='ralign'>MULTICAST</td>
+</tr>
+<tr>
+<td class='calign'>255.255.255.255</td>
+<td class='ralign'>255.255.255.255</td>
+<td class='ralign'>on-link</td>
+<td class='ralign'>192.168.1.6 </td>
+<td class='ralign'>999</td>
+<td class='ralign'>BROADCAST</td>
+</tr>
+<tr>
+<td class='calign'>0.0.0.0</td>
+<td class='ralign'>0.0.0.0</td>
+<td class='ralign'>192.168.1.1</td>
+<td class='ralign'>192.168.1.6 </td>
+<td class='ralign'>999</td>
+<td class='ralign'>DEFAULT</td>
+</tr>
+</tbody>
+</table>
+<p class="blank"></p>
+<h3 id='Switch Mac address table'>Switch Mac address table</h3>
+<h3 id='CLASS_C_SWITCH'>CLASS_C_SWITCH</h3>
+<table>
+<thead>
+<tr  page-break-after:auto>
+<th rowspan='2'>Mac Address</th>
+<th rowspan='2'>Type</th>
+<th rowspan='2'>OutPort</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='calign'>AF1D00000202</td>
+<td class='ralign'>Dynamic</td>
+<td class='ralign'>1</td>
+</tr>
+<tr>
+<td class='calign'>AF1D00000401</td>
+<td class='ralign'>Dynamic</td>
+<td class='ralign'>2</td>
+</tr>
+<tr>
+<td class='calign'>AF1D00000501</td>
+<td class='ralign'>Dynamic</td>
+<td class='ralign'>3</td>
+</tr>
+<tr>
+<td class='calign'>AF1D00000601</td>
+<td class='ralign'>Dynamic</td>
+<td class='ralign'>4</td>
+</tr>
+<tr>
+<td class='calign'>AF1D00000801</td>
+<td class='ralign'>Dynamic</td>
+<td class='ralign'>5</td>
+</tr>
+<tr>
+<td class='calign'>AF1D00000701</td>
+<td class='ralign'>Dynamic</td>
+<td class='ralign'>6</td>
+</tr>
+</tbody>
+</table>
+<p class="blank"></p>
+<h3 id='Application_Metrics'>Application_Metrics</h3>
+<table>
+<thead>
+<tr  page-break-after:auto>
+<th rowspan='2'>Application ID</th>
+<th rowspan='2'>Application Name</th>
+<th rowspan='2'>Source ID</th>
+<th rowspan='2'>Destination ID</th>
+<th rowspan='2'>Packets Generated</th>
+<th rowspan='2'>Packets Received</th>
+<th rowspan='2'>Payload generated (bytes)</th>
+<th rowspan='2'>Payload received (bytes)</th>
+<th rowspan='2'>Throughput (Mbps)</th>
+<th rowspan='2'>Delay (microsecond)</th>
+<th rowspan='2'>Jitter (microsecond)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='calign'>1</td>
+<td class='ralign'>App1_CBR</td>
+<td class='ralign'>1</td>
+<td class='ralign'>4</td>
+<td class='ralign'>5000</td>
+<td class='ralign'>5000</td>
+<td class='ralign'>7300000</td>
+<td class='ralign'>7300000</td>
+<td class='ralign'>0.584000</td>
+<td class='ralign'>24011.574864</td>
+<td class='ralign'>3604.140655</td>
+</tr>
+<tr>
+<td class='calign'>2</td>
+<td class='ralign'>App2_CBR</td>
+<td class='ralign'>1</td>
+<td class='ralign'>5</td>
+<td class='ralign'>5000</td>
+<td class='ralign'>5000</td>
+<td class='ralign'>7300000</td>
+<td class='ralign'>7300000</td>
+<td class='ralign'>0.584000</td>
+<td class='ralign'>29059.408134</td>
+<td class='ralign'>3996.730744</td>
+</tr>
+<tr>
+<td class='calign'>3</td>
+<td class='ralign'>App3_CBR</td>
+<td class='ralign'>1</td>
+<td class='ralign'>6</td>
+<td class='ralign'>5000</td>
+<td class='ralign'>5000</td>
+<td class='ralign'>7300000</td>
+<td class='ralign'>7300000</td>
+<td class='ralign'>0.584000</td>
+<td class='ralign'>50978.251625</td>
+<td class='ralign'>6184.581574</td>
+</tr>
+<tr>
+<td class='calign'>4</td>
+<td class='ralign'>App4_CBR</td>
+<td class='ralign'>1</td>
+<td class='ralign'>7</td>
+<td class='ralign'>5000</td>
+<td class='ralign'>5000</td>
+<td class='ralign'>7300000</td>
+<td class='ralign'>7300000</td>
+<td class='ralign'>0.584000</td>
+<td class='ralign'>29080.788945</td>
+<td class='ralign'>3983.602488</td>
+</tr>
+<tr>
+<td class='calign'>5</td>
+<td class='ralign'>App5_CBR</td>
+<td class='ralign'>1</td>
+<td class='ralign'>8</td>
+<td class='ralign'>5000</td>
+<td class='ralign'>5000</td>
+<td class='ralign'>7300000</td>
+<td class='ralign'>7300000</td>
+<td class='ralign'>0.584000</td>
+<td class='ralign'>23045.751781</td>
+<td class='ralign'>3399.326006</td>
+</tr>
+</tbody>
+</table>
+<p class="blank"></p>
+</body></html>
